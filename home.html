@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Blog Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .post h2 {
+            margin-top: 0;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <p>Sharing thoughts, images, and videos.</p>
+    </header>
+
+    <section class="post">
+        <h2>Post 1: A Simple Text Post</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula purus vitae nulla suscipit, non posuere arcu pulvinar. Vivamus vehicula, nulla vel fermentum consequat, risus ex tincidunt eros, id dignissim nulla lectus et sapien.</p>
+    </section>
+
+    <section class="post">
+        <h2>Post 2: An Image with Text</h2>
+        <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+        <p>This is an image post with some text below it. Images can make blog posts more engaging and visually appealing.</p>
+    </section>
+
+    <section class="post">
+        <h2>Post 3: A YouTube Video</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>Sometimes a video can say more than words ever could. Here's an embedded YouTube video for you to enjoy!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
